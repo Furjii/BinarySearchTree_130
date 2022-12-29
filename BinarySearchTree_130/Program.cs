@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace BinarySearchTree_130
 {
-    internal class Program
+    class Node
     {
+        public string info;
+        public Node leftchild;
+        public Node rightchild;
         static void Main(string[] args)
         {
         }
