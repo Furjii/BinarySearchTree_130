@@ -44,11 +44,30 @@ namespace BinarySearchTree_130
             {
                 tmp = new Node(element, null, null); /*creates a node*/
                 if (parent == null) /* if the trees is empty*/
+                {
+                    ROOT = tmp;
+                }
+                else if (string.Compare(element, parent.info) < 0)
+                {
+                    if (string.Compare(element, parent.info) < 0)
+                        parent.leftchild = tmp;
+                }
+                else
+                {
+                    parent.rightchild = tmp;
+                }
             }
         }
+        public void search(string element, ref Node parent, ref Node currentNode)
+        {
+
+        }
     }
+    internal class program
+    {
         static void Main(string[] args)
         {
         }
     }
 }
+
