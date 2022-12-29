@@ -63,7 +63,7 @@ namespace BinarySearchTree_130
             /*this function search the currentNode of the specified Node as well ass the current Node of its parent*/
             currentNode = ROOT;
             parent = null;
-            while((currentNode != null) && (currentNode.info != element))
+            while ((currentNode != null) && (currentNode.info != element))
             {
                 parent = currentNode;
                 if (string.Compare(element, currentNode.info) < 0)
@@ -78,7 +78,7 @@ namespace BinarySearchTree_130
             if (ROOT == null)
             {
                 Console.WriteLine("Tree is empty");
-                return ;
+                return;
             }
             if (ptr != null)
             {
@@ -143,10 +143,10 @@ namespace BinarySearchTree_130
                         {
                             x.inorder(x.ROOT);
                         }
-                        break ;
+                        break;
                     case '3':
                         {
-                            x.inorder(x.ROOT);
+                            x.preorder(x.ROOT);
                         }
                         break;
                     case '4':
@@ -161,12 +161,8 @@ namespace BinarySearchTree_130
                             Console.WriteLine("invalid option");
                             break;
                         }
-
-
                 }
-
             }
         }
     }
 }
-
