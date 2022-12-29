@@ -20,6 +20,22 @@ namespace BinarySearchTree_130
             leftchild = l;
             rightchild = r;
         }
+    }
+
+    /* A node class consist of the tree things, the information to the right child, and references to the left child. */
+
+    class binarytree
+    {
+        public Node ROOT;
+        public binarytree()
+        {
+            ROOT = null; /*Initializing ROOT to null*/
+        }
+        public void insert(string element)/* Insert a node in the binary search tree*/
+        {
+
+        }
+    }
         static void Main(string[] args)
         {
         }
