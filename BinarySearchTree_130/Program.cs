@@ -11,6 +11,15 @@ namespace BinarySearchTree_130
         public string info;
         public Node leftchild;
         public Node rightchild;
+
+        //Constructor for the nod class
+
+        public Node(string i, Node l, Node r)
+        {
+            info = i;
+            leftchild = l;
+            rightchild = r;
+        }
         static void Main(string[] args)
         {
         }
