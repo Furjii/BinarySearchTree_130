@@ -80,6 +80,16 @@ namespace BinarySearchTree_130
                 Console.WriteLine("Tree is empty");
                 return ;
             }
+            if (ptr != null)
+            {
+                inorder(ptr.leftchild);
+                Console.WriteLine(ptr.info + "  ");
+                inorder(ptr.rightchild);
+            }
+        }
+        public void preorder(Node ptr)
+        {
+
         }
     }
     internal class program
